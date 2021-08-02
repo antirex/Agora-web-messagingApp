@@ -7,7 +7,7 @@ Real Time Messaging application using the Agora.io RTM SDK for texting and creat
 </a>
 </p>
 
-#### Link for [demo]
+#### Link for [hola-webapp.netlify.app/]
 
 ## Requirements
 
