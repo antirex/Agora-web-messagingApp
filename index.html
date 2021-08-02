@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Linking Favicon, Apple Touch Icon, Font Awesome, AOS, Materialize & CSS -->
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        defer>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <!-- Title -->
+    <title>Agora RTM Messaging App</title>
+
+    <!-- No Script -->
+    <noscript>Please enable JavaScript to open this page.</noscript>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo">Hola🤩</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="modal-trigger" href="#joinChatroom">Join Chat Room</a></li>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#!" onclick="leaveChannel();">Leave the room</a></li>
+                </ul>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sidenav -->
+    <ul class="sidenav" id="mobile-demo">
+        <li class="center">
+            <h4>Agora RTM</h4>
+        </li>
+        <li class="center"><a class="modal-trigger waves-effect grey lighten-4" href="#joinChatroom">Join
+                Chatroom</a></li>
+        <li class="center"><a href="#!" onclick="leaveChannel();">Leave Chatroom</a></li>
+    </ul>
+
+    <!-- Main Div -->
+    <div class="p-20">
+        <div class="row">
+            <!-- Message Form -->
+            <div class="col s12 m4">
+                <div class="grey lighten-4 p-20">
+                    <label for="channelMsg">Chatroom Message</label>
+                    <textarea placeholder="Type your message here.." id="channelMsg"
+                        class="materialize-textarea"></textarea>
+                    <button id="sendMsgBtn" class="btn waves-effect">Send Message</button>
+
+                </div>
+                <div class="grey lighten-4 p-20 mt-3">
+                    <h6>How to use this app:</h6>
+                    <ol>
+                        <li>Click on join the channel</li>
+                        <li>Type the name of the channel and username</li>
+                        <li>Send that channel name to others</li>
+                        <li>Everyone who wants to join the same channel should type the exact same name</li>
+                        <li>Volia! Enjoy texting :)</li>
+                    </ol>
+                </div>
+            </div>
+            <!-- Messages -->
+            <div class="col s12 m8">
+                <div class="grey lighten-4 p-20">
+                    <div id="messageBox">
+                        <h5><b>Chatroom Name:</b> <span id="channelNameBox"></span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatroom Join Modal -->
+    <div id="joinChatroom" class="modal">
+        <div class="modal-content">
+            <h4 class="center">Join Channel</h4>
+            <label for="accountName">User Name</label>
+            <input type="text" placeholder="User Name" id="accountName" />
+            <label for="channelNameInput">Chatroom Name</label>
+            <input type="text" placeholder="Channel Name" id="channelNameInput" />
+        </div>
+        <div class="modal-footer">
+            <button id="joinNow" class="modal-close btn waves-effect">Join the Chatroom</button>
+        </div>
+    </div>
+    <footer>
+        ©Powered by Agora RTM
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/agora-rtm-sdk@1.3.1/index.js"></script>
+    <script src="assets/js/rtm-client.js"></script>
+
+</body>
+
+</html>

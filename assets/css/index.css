@@ -1,0 +1,66 @@
+body {
+  background-image: url(../img/elegant-white-background-with-blue-wave-lines.jpg);
+  background-repeat: no-repeat;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+/* Padding */
+.p-20 {
+  padding: 20px;
+}
+
+/* Margin Y-Axis */
+.my-2 {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+/* Displays */
+.d-none {
+  display: none;
+}
+
+/* Label Focus Color */
+#channelNameInput:focus + label,
+#accountName:focus + label,
+#channelMsg:focus + label {
+  color: #4eaeee;
+}
+
+/* Label Underline Focus Color */
+#channelNameInput:focus,
+#accountName:focus,
+#channelMsg:focus {
+  border-bottom: 1px solid #4eaeee;
+  box-shadow: 0 1px 0 0 #4eaeee;
+}
+
+/* Channel Join Button */
+#joinChannelBtn,
+#sendMsgBtn {
+  background-color: #4eaeee;
+  color: white;
+  border-radius: 5px;
+}
+
+#joinChannelBtn:hover,
+#sendMsgBtn:hover {
+  background-color: #0285dd;
+}
+
+/* Navbar */
+#navbar {
+  background: #0285dd;
+}
+
+.brand-logo {
+  margin-left: 10px;
+}
+footer {
+  text-align: center;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
