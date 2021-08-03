@@ -1,6 +1,5 @@
 // Color Variable
 var color = "#000000";
-
 // Set up the canvas
 var canvas = document.getElementById("whiteboard-canvas");
 var dpr = window.devicePixelRatio || 1;
@@ -248,9 +247,9 @@ $("#joinNow").click(function () {
                     .then(() => {
                       console.log(
                         "Your message was: " +
-                          JSON.stringify(finalMsg) +
-                          " by " +
-                          accountName
+                        JSON.stringify(finalMsg) +
+                        " by " +
+                        accountName
                       );
                     })
                     .catch((error) => {
@@ -271,6 +270,20 @@ $("#joinNow").click(function () {
                   "Can't leave the message field empty! Please type some message"
                 );
               } else {
+                var today = new Date();
+                var date =
+                  today.getFullYear() +
+                  "-" +
+                  (today.getMonth() + 1) +
+                  "-" +
+                  today.getDate();
+                var time =
+                  today.getHours() +
+                  ":" +
+                  today.getMinutes() +
+                  ":" +
+                  today.getSeconds();
+                var dateTime = time;
                 channel
                   .sendMessage({
                     text: singleMessage,
@@ -279,16 +292,12 @@ $("#joinNow").click(function () {
                     console.log("Message sent successfully.");
                     console.log(
                       "Your message was: " +
-                        singleMessage +
-                        " by " +
-                        accountName
+                      singleMessage +
+                      " by " +
+                      accountName
                     );
                     $("#messageBox").append(
-                      "<br> <b>Sender:</b> " +
-                        accountName +
-                        "<br> <b>Message: </b> <span style='white-space: pre-wrap;'>" +
-                        singleMessage +
-                        "</span><br>"
+                      `<p><${dateTime}>  <b style='background-color:#8dd1ff;padding:0.5rem;border-radius:1rem;'>${accountName}:</b> ${singleMessage}</p>`
                     );
                     $("#channelMsg").val("");
                   })
@@ -297,16 +306,26 @@ $("#joinNow").click(function () {
                   });
                 // Receive Channel Message
                 channel.on("ChannelMessage", ({ text }, senderId) => {
+                  var today = new Date();
+                  var date =
+                    today.getFullYear() +
+                    "-" +
+                    (today.getMonth() + 1) +
+                    "-" +
+                    today.getDate();
+                  var time =
+                    today.getHours() +
+                    ":" +
+                    today.getMinutes() +
+                    ":" +
+                    today.getSeconds();
+                  var dateTime = time;
                   console.log("Message received successfully.");
                   console.log("The message is: " + text + " by " + senderId);
                   console.log(typeof text);
                   if (text.indexOf("{") !== 0) {
                     $("#messageBox").append(
-                      "<br> <b>Sender:</b> " +
-                        senderId +
-                        "<br> <b>Message: </b> <span style='white-space: pre-wrap;'>" +
-                        text +
-                        "</span><br>"
+                      `<p ><${dateTime}>  <b style='background-color:white;padding:0.5rem;color:#0285dd;border-radius:1rem;'>${senderId}:</b> ${text}</p>`
                     );
                   }
                 });

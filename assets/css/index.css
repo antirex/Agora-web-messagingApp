@@ -1,6 +1,9 @@
 body {
-  background-image: url(../img/elegant-white-background-with-blue-wave-lines.jpg);
-  background-repeat: no-repeat;
+  background-image: url(../img/elegant-white-background-with-blue-wave-lines.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
@@ -8,7 +11,9 @@ body {
 .p-20 {
   padding: 20px;
 }
-
+.iconBlue {
+  color: #0285dd;
+}
 /* Margin Y-Axis */
 .my-2 {
   margin-top: 5px !important;
@@ -56,16 +61,27 @@ body {
 .brand-logo {
   margin-left: 10px;
 }
-
+.box {
+  border: #71c4ff solid 2px;
+  border-radius: 1rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin-top: 1rem;
+}
+.box h5 {
+  font-weight: bold;
+  text-align: center;
+}
 footer {
   text-align: center;
-  position: fixed;
   margin: 1rem;
   bottom: 0;
   right: 0;
   left: 0;
 }
-
+#joinChatroom{
+  border-radius: 1rem;
+  padding: 1rem;
+}
 /* Outer Div For Canvas  */
 #outer-div {
   margin: 0;
@@ -94,7 +110,7 @@ footer {
   padding: 5px;
   border-radius: 5px;
   position: absolute;
-  left: 30px;
+  left: 40px;
   margin-top: 10px;
   background: #cccccc;
 }
@@ -124,4 +140,18 @@ footer {
   background-color: #0c9dfd;
   color: #ffffff;
   border: 1px solid #0c9dfd;
+}
+
+.faq {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0rem;
+}
+.collapsible-body{
+  background-color: #ffffff;
+  padding: 1rem;
+}
+.collapsible{
+  width: 50%;
 }

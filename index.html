@@ -57,7 +57,7 @@
         <li class="center">
             <h4>Agora RTM</h4>
         </li>
-        <li class="center"><a class="modal-trigger waves-effect grey lighten-4" href="#joinChatroom">Join
+        <li class="center"><a class="modal-trigger waves-effect grey box lighten-4" href="#joinChatroom">Join
                 Chatroom</a></li>
         <li class="center"><a href="#!" onclick="leaveChannel();">Leave Chatroom</a></li>
     </ul>
@@ -67,22 +67,14 @@
         <div class="row">
             <!-- Message Form -->
             <div class="col s12 l5">
-                <div class="grey lighten-4 p-20">
+                <div class="grey box lighten-4 p-20">
                     <label for="channelMsg">Chatroom Message</label>
                     <textarea placeholder="Type your message here.." id="channelMsg"
                         class="materialize-textarea"></textarea>
                     <button id="sendMsgBtn" class="btn waves-effect">Send Message</button>
-
                 </div>
-                <div class="grey lighten-4 p-20 mt-3">
-                    <h6>How to use this app:</h6>
-                    <ol>
-                        <li>Click on join the channel</li>
-                        <li>Type the name of the channel and username</li>
-                        <li>Send that channel name to others</li>
-                        <li>Everyone who wants to join the same channel should type the exact same name</li>
-                        <li>Volia! Enjoy texting :)</li>
-                    </ol>
+                <div class="grey box lighten-4 p-20">
+                    <h5>Whiteboard</h5>
                     <!-- Tools -->
                     <div id="tools">
                         <!-- Color Change -->
@@ -91,9 +83,6 @@
                                 class="btn waves-effect colorBtn z-depth-0 my-2"><i
                                     class="material-icons">color_lens</i></button>
                             <input type="color" id="colorPicker" class="d-none" value="#000000">
-                        </div>
-                        <!-- Eraser -->
-                        <div id="clearScreenDiv">
                             <button id="eraseColor" onclick="startErasing();"
                                 class="btn waves-effect eraserBtn z-depth-0 my-2"><i class="fa fa-eraser"></i></button>
                         </div>
@@ -112,7 +101,7 @@
             </div>
             <!-- Messages -->
             <div class="col s12 l7">
-                <div class="grey lighten-4 p-20">
+                <div class="grey box lighten-4 p-20">
                     <div id="messageBox">
                         <h5><b>Chatroom Name:</b> <span id="channelNameBox"></span></h5>
                     </div>
@@ -133,6 +122,46 @@
         <div class="modal-footer">
             <button id="joinNow" class="modal-close btn waves-effect">Join the Chatroom</button>
         </div>
+    </div>
+    <div class="faq">
+        <ul class="collapsible">
+            <li>
+                <div class="collapsible-header"><i class="material-icons iconBlue medium">accessibility</i>How
+                    to use this app?
+                </div>
+                <div class="collapsible-body">
+                    <ol>
+                        <li>Click on join the channel</li>
+                        <li>Type the name of the channel and username</li>
+                        <li>Send that channel name to others</li>
+                        <li>Everyone who wants to join the same channel should type the exact same name</li>
+                        <li>Draw real time annotations using the Agora Whiteboard!</li>
+                        <li>Volia! Enjoy texting and drawing:)</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons iconBlue medium">vpn_lock</i>Are the
+                    chats secure?
+                </div>
+                <div class="collapsible-body"><span>The chatroom is absolutely safe for you guys to chat and share your
+                        drawings!</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons iconBlue medium">all_inclusive</i>What
+                    are the
+                    features?</div>
+                <div class="collapsible-body">
+                    <ol>
+                        <li>Live chat support</li>
+                        <li>Connect with anyone, anywhere</li>
+                        <li>No need to login or share any details</li>
+                        <li>Easy-to-use and understand</li>
+                        <li>No need for any download or high speed internet</li>
+                    </ol>
+                </div>
+            </li>
+        </ul>
     </div>
     <footer>
         ©Powered by Agora RTM
