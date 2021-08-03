@@ -71,7 +71,8 @@ footer {
   margin: 0;
   overflow: hidden;
   z-index: 1;
-  border: 2px solid #1a0274;
+  border-radius: 1rem;
+  border: 2px solid #0c9dfd;
   height: 88vh;
   width: 100%;
 }
