@@ -1,11 +1,27 @@
 body {
-  background-image: url(../img/elegant-white-background-with-blue-wave-lines.jpg); 
+  background-image: url(../img/elegant-white-background-with-blue-wave-lines.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
+  overflow-x: hidden;
   -o-background-size: cover;
   background-size: cover;
-  font-family: 'Satoshi', sans-serif;
+  font-family: "Satoshi", sans-serif;
   font-weight: 600;
+}
+body::-webkit-scrollbar {
+  width: 0.5em;
+  border-radius: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 1rem;
+  -webkit-box-shadow: inset 0 0 6px #0000004d;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0285dd;
+  border-radius: 1rem;
+  outline: 1px solid rgb(214, 214, 214);
 }
 /* Padding */
 .p-20 {
@@ -57,7 +73,7 @@ body {
 #navbar {
   background: #0285dd;
 }
-.message{
+.message {
   display: flex;
 }
 .brand-logo {
@@ -80,7 +96,7 @@ footer {
   right: 0;
   left: 0;
 }
-#joinChatroom{
+#joinChatroom {
   border-radius: 1rem;
   padding: 1rem;
 }
@@ -150,10 +166,10 @@ footer {
   justify-content: center;
   margin-bottom: 0rem;
 }
-.collapsible-body{
+.collapsible-body {
   background-color: #ffffff;
   padding: 1rem;
 }
-.collapsible{
+.collapsible {
   width: 50%;
 }
