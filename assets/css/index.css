@@ -4,7 +4,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Satoshi', sans-serif;
   font-weight: 600;
 }
 /* Padding */
@@ -57,12 +57,14 @@ body {
 #navbar {
   background: #0285dd;
 }
-
+.message{
+  display: flex;
+}
 .brand-logo {
   margin-left: 10px;
 }
 .box {
-  border: #71c4ff solid 2px;
+  border: #71c4ff solid 1px;
   border-radius: 1rem;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   margin-top: 1rem;
