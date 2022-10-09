@@ -45,21 +45,21 @@ body::-webkit-scrollbar-thumb {
 #channelNameInput:focus + label,
 #accountName:focus + label,
 #channelMsg:focus + label {
-  color: #4eaeee;
+  color: #4eaeed;
 }
 
 /* Label Underline Focus Color */
 #channelNameInput:focus,
 #accountName:focus,
 #channelMsg:focus {
-  border-bottom: 1px solid #4eaeee;
+  border-bottom: 1px solid #4eaeed;
   box-shadow: 0 1px 0 0 #4eaeee;
 }
 
 /* Channel Join Button */
 #joinChannelBtn,
 #sendMsgBtn {
-  background-color: #4eaeee;
+  background-color: #4eaeed;
   color: white;
   border-radius: 5px;
 }
@@ -82,7 +82,7 @@ body::-webkit-scrollbar-thumb {
 .box {
   border: #71c4ff solid 1px;
   border-radius: 1rem;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
   margin-top: 1rem;
 }
 .box h5 {
@@ -125,18 +125,18 @@ footer {
 /* Tools */
 #tools {
   z-index: 10;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 6px;
+  border-radius: 6px;
   position: absolute;
   left: 40px;
-  margin-top: 10px;
+  margin-top: 9px;
   background: #cccccc;
 }
 
 /* Font Size Big */
 .font-size-big {
-  font-size: 23px;
-  margin-left: 10px;
+  font-size: 22px;
+  margin-left: 9px;
 }
 
 /* Tool Buttons */
@@ -145,7 +145,7 @@ footer {
 .eraserBtn {
   background-color: #ffffff;
   color: #0c9dfd;
-  border-radius: 5px;
+  border-radius: 6px;
   border: 1px solid #ffffff;
 }
 
